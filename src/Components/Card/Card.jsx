@@ -8,8 +8,9 @@ const Card = ({ repo }) => {
       <div className="card-details">
         <h2>{repo.name}</h2>
         <p>{repo.stargazers_count} stars</p>
-        <p>{repo.description}</p>
-        <p>{repo.language}</p>
+        <h5>Repo Description:</h5>
+        <p> {repo.description}</p>
+        <p>Repo Language: {repo?.language}</p>
       </div>
     </div>
   );
